@@ -1,10 +1,12 @@
 import React from 'react'
 import Navbar from './pages/Navbar'
+import Features from './pages/Features'
 
-const App = () => {
+const App:React.FC = () => {
   return (
     <div>
       <Navbar/>
+      <Features/>
     </div>
   )
 }
