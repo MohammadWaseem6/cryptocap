@@ -3,12 +3,9 @@ import React from 'react'
 // icons
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-
-
-
 const Features: React.FC = () => {
     return (
-        <div className='bg-[#26012D] min-h-screen w-full'>
+        <div className='bg-[#26012D] h-[ 600px] w-full'>
             <div className='items-center justify-items-center'>
                 <p className='text-4xl text-white'>CryptoCap Amazing Features</p>
                 <p className='text-gray-300 mt-3.5'>Explore Sensational features to prepare best investment in CryptoCurrency</p>

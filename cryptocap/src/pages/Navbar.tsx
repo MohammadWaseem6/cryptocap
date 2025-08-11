@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
           </button>
         </div>
 
-        {/* Mobile menu button */}
+       
         <button
           className="md:hidden text-white text-3xl"
           onClick={() => setMenuOpen((prev) => !prev)}
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
+     
       {menuOpen && (
         <div className="md:hidden bg-[#26012D] px-6 py-4 space-y-6 text-white font-semibold text-lg border-t border-gray-700 max-w-7xl mx-auto">
           <ul className="flex flex-col space-y-4">
@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center space-x-3">
             <CiGlobe className="text-2xl" />
             <p className="font-bold">En</p>
-            
+
             <IoIosArrowDown />
             <button className="bg-blue-400 w-20 h-9 rounded-sm hover:bg-blue-500 transition-colors">
               Login
@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
         </div>
       )}
 
-      {/* Hero Section */}
+     
       <section className="text-gray-400 text-center py-20 px-4 max-w-3xl mx-auto">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-wide">
           Start and Build Your Crypto Portfolio Here
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
         </button>
       </section>
 
-     
+
       <section className="text-white font-semibold px-6 max-w-7xl mx-auto pb-20">
         <h1 className="text-2xl mb-8">Market Trend</h1>
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -112,14 +112,14 @@ const Navbar: React.FC = () => {
               whileTap={{ scale: 0.95 }}
               className="bg-[#2A1547] text-white rounded-xl p-6 w-full cursor-pointer"
             >
-              
+
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-4">
-                  
+
                   <div className={`${coin.color} p-3 rounded-full flex items-center justify-center`}>
                     <FaBitcoin className="text-white text-2xl" />
                   </div>
-                 
+
                   <div className="flex items-center space-x-3">
                     <span className="text-lg font-bold">{coin.symbol}</span>
                     <span className="bg-gray-200 text-gray-800 px-2 py-0.5 text-xs rounded-sm select-none">
@@ -127,19 +127,19 @@ const Navbar: React.FC = () => {
                     </span>
                   </div>
                 </div>
-               
+
                 <div className="bg-purple-600 p-2 rounded-full">
                   <TbArrowCurveRight className="text-white text-lg" />
                 </div>
               </div>
 
-             
+
               <div className="mt-6">
                 <p className="text-2xl font-bold">{coin.price}</p>
                 <p className="text-green-400 text-sm">{coin.change}</p>
               </div>
 
-            {/* Graph */}
+            
               <div className="mt-6">
                 <MdOutlineAutoGraph className="text-cyan-400 text-5xl mx-auto" />
               </div>
