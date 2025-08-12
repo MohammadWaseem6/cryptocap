@@ -22,12 +22,12 @@ const Categerioes: React.FC = () => {
     const listLabels = ['NO', 'Name', 'LAST PRICE', 'CHANGE', 'MARKET STATUS', 'TRADE'];
 
     return (
-        <div className="bg-[#26012D] w-[1600px] h-[800px]">
+        <div className="bg-[#26012D] w-min-screen h-[800px]">
             <h1 className="text-white text-2xl font-extrabold pl-8">Market Updates</h1>
             <p className="text-gray-300 pl-8 mt-2">CryptoCurrencies Categories</p>
 
 
-            <div className="flex gap-4 sm:grid-cols-2 p-8">
+            <div className="flex  w-fit gap-4 sm:grid-cols-2 p-8">
                 {labels.map((item, index) => (
                     <p
                         key={index}
@@ -56,9 +56,9 @@ const Categerioes: React.FC = () => {
             </div>
 
 
-            <div className="w-full">
+            <div className="w-full ">
                 {categerios.map((item, index) => (
-                    <div key={index} className="flex border-1 border-white rounded-2xl m-2 font-bold text-gray-400 ">
+                    <div key={index} className="flex border-1 border-gray-600 rounded-2xl m-2 font-bold text-gray-400 h-[70px] items-center hover:bg-teal-900 hover:text-black">
                         <p className=" gap-3  ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center ">{item.sno}</p>
                         <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center ">{item.name}</p>
                         <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center ">${item.lastPrice.toLocaleString()}</p>

@@ -20,11 +20,11 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="bg-[#26012D] min-h-screen w-full">
-      {/* Navbar */}
+     
       <nav className="text-white p-4 flex items-center justify-between max-w-7xl mx-auto">
         <div className="text-2xl font-bold">CryptoCap</div>
 
-        {/* Desktop Menu */}
+      
         <ul className="hidden md:flex space-x-10 text-lg font-medium">
           {["Home", "Business", "Trade", "Market", "Learn"].map((item) => (
             <li
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
           ))}
         </ul>
 
-        {/* Right section */}
+        
         <div className="hidden md:flex items-center space-x-3">
           <CiGlobe className="text-2xl" />
           <p className="font-bold">En</p>
