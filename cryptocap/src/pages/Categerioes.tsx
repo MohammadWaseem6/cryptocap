@@ -1,5 +1,4 @@
 import React from 'react';
-
 interface Category {
     sno: number;
     name: string;
@@ -27,7 +26,7 @@ const Categerioes: React.FC = () => {
             <h1 className="text-white text-2xl font-extrabold pl-8">Market Updates</h1>
             <p className="text-gray-300 pl-8 mt-2">CryptoCurrencies Categories</p>
 
-            {/* Category Buttons */}
+
             <div className="flex gap-4 sm:grid-cols-2 p-8">
                 {labels.map((item, index) => (
                     <p
@@ -44,7 +43,7 @@ const Categerioes: React.FC = () => {
                 />
             </div>
 
-            {/* Table Header */}
+
             <div className="flex w-full h-[50px]">
                 {listLabels.map((label, index) => (
                     <p
@@ -56,22 +55,21 @@ const Categerioes: React.FC = () => {
                 ))}
             </div>
 
-            {/* Table Data */}
+
             <div className="w-full">
                 {categerios.map((item, index) => (
-                    <div key={index} className="flex">
-                        <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center text-white">{item.sno}</p>
-                        <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center text-white">{item.name}</p>
-                        <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center text-white">${item.lastPrice.toLocaleString()}</p>
+                    <div key={index} className="flex border-1 border-white rounded-2xl m-2 font-bold text-gray-400 ">
+                        <p className=" gap-3  ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center ">{item.sno}</p>
+                        <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center ">{item.name}</p>
+                        <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center ">${item.lastPrice.toLocaleString()}</p>
                         <p
-                            className={`ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center ${
-                                item.change >= 0 ? 'text-green-400' : 'text-red-400'
-                            }`}
+                            className={`ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center ${item.change >= 0 ? 'text-green-400' : 'text-red-400'
+                                }`}
                         >
                             {item.change}%
                         </p>
-                        <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center text-white">{item.marketStatus}</p>
-                        <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center text-white">{item.trade}</p>
+                        <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center ">{item.marketStatus}</p>
+                        <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center ">{item.trade}</p>
                     </div>
                 ))}
             </div>
