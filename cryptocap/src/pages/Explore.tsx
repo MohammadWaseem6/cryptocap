@@ -15,7 +15,7 @@ const Explore: React.FC = () => {
           </p>
         </div>
         
-        <button className='bg-teal-400 w-[160px] h-[50px] rounded-2xl'>
+        <button className='bg-teal-400 w-[160px] h-[50px] rounded-sm'>
           Learn & Explore now
         </button>
         

@@ -69,9 +69,10 @@ const Categerioes: React.FC = () => {
                             {item.change}%
                         </p>
                         <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center ">{item.marketStatus}</p>
-                        <p className="ml-7 mt-2 w-[200px] h-[30px] flex items-center justify-center ">{item.trade}</p>
+                        <p className="ml-15 mt-2 h-[30px] flex items-center justify-center bg-teal-400 w-[100px]  rounded-2xl text-black hover:bg-black hover:text-white cursor-pointer">{item.trade}</p>
                     </div>
                 ))}
+                <p className='text-teal-500 font-bold   w-[150px] h-[40px] items-center text-center rounded-2xl justify-items-center ml-6 mt-3 hover:text-red-500 cursor-pointer underline'>See All Coins</p>
             </div>
         </div>
     );

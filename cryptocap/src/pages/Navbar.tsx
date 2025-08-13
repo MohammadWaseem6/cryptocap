@@ -146,6 +146,8 @@ const Navbar: React.FC = () => {
             </motion.div>
           ))}
         </div>
+
+        
       </section>
     </div>
   );
