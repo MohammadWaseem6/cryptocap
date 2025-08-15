@@ -7,7 +7,6 @@ interface Category {
     marketStatus?: string;
     trade?: string;
 }
-
 const Categerioes: React.FC = () => {
     const categerios: Category[] = [
         { sno: 1, name: "Bitcoin | BTC", lastPrice: 56523.6, change: 1.4, marketStatus: "Bullish", trade: "Buy" },
@@ -25,8 +24,6 @@ const Categerioes: React.FC = () => {
         <div className="bg-[#26012D] w-min-screen h-[800px]">
             <h1 className="text-white text-2xl font-extrabold pl-8">Market Updates</h1>
             <p className="text-gray-300 pl-8 mt-2">CryptoCurrencies Categories</p>
-
-
             <div className="flex  w-fit gap-4 sm:grid-cols-2 p-8">
                 {labels.map((item, index) => (
                     <p
@@ -42,8 +39,6 @@ const Categerioes: React.FC = () => {
                     className="w-[300px] h-[30px] mt-6 rounded-sm ml-20 text-white border border-[#957a9b] bg-transparent px-2"
                 />
             </div>
-
-
             <div className="flex w-full h-[50px]">
                 {listLabels.map((label, index) => (
                     <p
@@ -54,8 +49,6 @@ const Categerioes: React.FC = () => {
                     </p>
                 ))}
             </div>
-
-
             <div className="w-full ">
                 {categerios.map((item, index) => (
                     <div key={index} className="flex border-1 border-gray-600 rounded-2xl m-2 font-bold text-gray-400 h-[70px] items-center hover:bg-teal-900 hover:text-black">
@@ -77,5 +70,4 @@ const Categerioes: React.FC = () => {
         </div>
     );
 };
-
 export default Categerioes;

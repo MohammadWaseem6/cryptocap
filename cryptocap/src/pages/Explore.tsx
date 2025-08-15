@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Explore: React.FC = () => {
   return (
     <div className='bg-[#26012D] w-full h-[400px] grid place-items-center'>
