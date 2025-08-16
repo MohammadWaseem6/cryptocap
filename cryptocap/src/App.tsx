@@ -4,7 +4,9 @@ import Features from './pages/Features'
 import Categerioes from './pages/Categerioes'
 import Explore from './pages/Explore'
 import Customer from './pages/Customer'
-import LearnCrypto from './pages/LearnCrpto'
+import Footer from './pages/Footer'
+
+// import LearnCrypto from './pages/LearnCrpto'
 
 const App:React.FC = () => {
   return (
@@ -14,7 +16,7 @@ const App:React.FC = () => {
       <Explore/>
       <Categerioes/>
       <Customer/>
-      <LearnCrypto/>
+      <Footer/>
      
     </div>
   )
