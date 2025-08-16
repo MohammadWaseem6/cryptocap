@@ -6,7 +6,6 @@ import Explore from './pages/Explore'
 import Customer from './pages/Customer'
 import Footer from './pages/Footer'
 
-// import LearnCrypto from './pages/LearnCrpto'
 
 const App:React.FC = () => {
   return (
